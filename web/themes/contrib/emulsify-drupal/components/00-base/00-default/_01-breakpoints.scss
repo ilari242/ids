@@ -1,0 +1,17 @@
+/**
+ * Breakpoint Configuration
+ * @see https://github.com/Team-Sass/breakpoint/wiki
+ *
+ */
+
+/////////////////////
+// Global Breakpoints
+
+$xs: 320px;
+$small: 480px;
+$medium: 720px;
+$large: 920px;
+$xl: 1224px;
+$xxl: 1440px;
+
+$max-width: $xxl;

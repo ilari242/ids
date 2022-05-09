@@ -1,0 +1,13 @@
+{% set main__base_class = main_base_class|default('main') %}
+{% set main_content__base_class = main_content__base_class|default('main-content') %}
+
+<div {{ bem('layout-container', layout_modifiers) }}>
+  {% block page_header %}
+    {% include "@organisms/site/site-header/site-header.twig" %}
+  {% endblock %}
+  <div {{ bem(main__base_class, main__modifiers, main__blockname) }}>
+    <main {{ bem(main_content__base_class, main_content__modifiers, main_content__blockname) }}>
+      {% block page_content %}{% endblock %}
+    </main>
+  </div>
+</div>

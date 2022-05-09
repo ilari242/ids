@@ -1,0 +1,9 @@
+{% set header__base_class = 'header' %}
+
+<header {{ bem(header__base_class) }}>
+  <div {{ bem('main-menu', [], header__base_class) }}>
+    {% block header__main_menu %}
+      {{ main_menu }}
+    {% endblock %}
+  </div>
+</header>

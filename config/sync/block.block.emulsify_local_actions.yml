@@ -9,7 +9,7 @@ _core:
 id: emulsify_local_actions
 theme: emulsify
 region: content
-weight: -10
+weight: 0
 provider: null
 plugin: local_actions_block
 settings:
