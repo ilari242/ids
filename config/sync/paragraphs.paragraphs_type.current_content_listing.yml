@@ -1,0 +1,10 @@
+uuid: dd98da1a-c0be-4e01-9947-d72231170b57
+langcode: en
+status: true
+dependencies: {  }
+id: current_content_listing
+label: 'Current content listing'
+icon_uuid: null
+icon_default: null
+description: 'Use this paragraph to add listing of current content.'
+behavior_plugins: {  }
