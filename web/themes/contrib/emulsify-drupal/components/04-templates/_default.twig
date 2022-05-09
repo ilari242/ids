@@ -5,9 +5,14 @@
   {% block page_header %}
     {% include "@organisms/site/site-header/site-header.twig" %}
   {% endblock %}
+
   <div {{ bem(main__base_class, main__modifiers, main__blockname) }}>
     <main {{ bem(main_content__base_class, main_content__modifiers, main_content__blockname) }}>
       {% block page_content %}{% endblock %}
     </main>
   </div>
+
+  {% block page_footer %}
+    {% include "@organisms/site/site-footer/site-footer.twig" %}
+  {% endblock %}
 </div>
