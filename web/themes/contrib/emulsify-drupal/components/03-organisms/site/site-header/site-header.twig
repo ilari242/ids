@@ -3,7 +3,7 @@
 <header {{ bem(header__base_class) }}>
   <div {{ bem('main-menu', [], header__base_class) }}>
     {% block header__main_menu %}
-      {% include "@molecules/menus/main-menu/main-menu.twig" %}
+      {{ main_menu }}
     {% endblock %}
   </div>
 </header>
