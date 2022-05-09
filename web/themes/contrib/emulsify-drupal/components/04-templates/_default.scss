@@ -1,0 +1,6 @@
+.layout-container {
+  max-width: $max-width;
+  padding-left: calc(-50vw + calc(#{$max-width} / 2));
+  padding-right: calc(-50vw + calc(#{$max-width} / 2));
+  margin: 0 auto;
+}
