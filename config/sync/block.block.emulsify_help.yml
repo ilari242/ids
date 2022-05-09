@@ -10,8 +10,8 @@ _core:
   default_config_hash: jccFSSVqV0WCDb6NtML1VWAWTtDbZ-zn5YgTRMgMrIM
 id: emulsify_help
 theme: emulsify
-region: header
-weight: 0
+region: content
+weight: -1
 provider: null
 plugin: help_block
 settings:
