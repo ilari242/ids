@@ -1,0 +1,31 @@
+uuid: 6190d399-f3d1-4919-8baf-f4f7feaad920
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.current_content_listing
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: landing_page
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      current_content_listing: current_content_listing
+    negate: 0
+    target_bundles_drag_drop:
+      current_content_listing:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions
