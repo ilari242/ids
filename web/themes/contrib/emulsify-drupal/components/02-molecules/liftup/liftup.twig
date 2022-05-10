@@ -1,0 +1,26 @@
+{% set liftup__base_class = 'liftup' %}
+
+<div {{ bem(liftup__base_class, (liftup__modifiers), liftup__blockname) }}>
+  <a {{ bem('container-link', [], liftup__base_class) }} href="{{ liftup__link_url }}">
+    {# Image #}
+    {% block liftup_img %}
+    {% endblock %}
+    {# Content #}
+    {% block liftup_content %}
+      <div {{ bem('content', [], liftup__base_class) }}>
+        {# Title #}
+        {% if liftup__title %}
+          <h3 {{ bem('title', [], liftup__base_class) }}>
+            {{ liftup__title }}
+          </h2>
+        {% endif %}
+        {# Body #}
+        {% if liftup__body %}
+          <p {{ bem('body', [], liftup__base_class) }}>
+            {{ liftup__body }}
+          </p>
+        {% endif %}
+      </div>
+    {% endblock %}
+  </a>
+</div>

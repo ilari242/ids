@@ -1,0 +1,25 @@
+{% set liftup_row__base_class = "liftup-row" %}
+
+<div {{ bem(liftup_row__base_class, (liftup_row__modifiers), liftup_row__blockname) }}>
+  {% block liftup_row_content %}
+    {% for liftup in liftups %}
+      {% embed "@molecules/liftup/liftup.twig" with {
+        liftup__title: liftup.liftup_title,
+        liftup__body: liftup.liftup_body,
+        liftup__link_url: liftup.liftup_link_url,
+      } %}
+        {% block liftup_img %}
+          <div {{ bem('image', [], liftup__base_class) }}>
+            {% if liftup.image_field %}
+              {{ liftup.image_field }}
+            {% elseif liftup.liftup_img_src %}
+              <img {{ bem('image', [], liftup__base_class) }}
+                src="{{ liftup.liftup_img_src }}"
+              />
+            {% endif %}
+          </div>
+        {% endblock %}
+      {% endembed %}
+    {% endfor %}
+  {% endblock %}
+</div>
