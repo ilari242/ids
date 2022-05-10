@@ -1,0 +1,20 @@
+uuid: aaf14f98-325a-4046-9d65-13ba2f732492
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - responsive_image
+_core:
+  default_config_hash: 5_u-TI6Qt78YQWl3DxbMBYKuCScEXKSeXTm8Jyl3eds
+name: max_650x650
+label: 'Max 650x650'
+effects:
+  acaeecaf-62d0-4784-9748-355b5f19cf03:
+    uuid: acaeecaf-62d0-4784-9748-355b5f19cf03
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 650
+      height: 650
+      anchor: center-center

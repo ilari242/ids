@@ -1,21 +1,19 @@
-uuid: d2bab969-0288-4b2b-9786-6e1715909dee
+uuid: d80a234e-795e-4e35-ae4e-ff0345ec5b35
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_lead_paragraph
     - node.type.news_item
-  module:
-    - text
 id: node.news_item.field_lead_paragraph
 field_name: field_lead_paragraph
 entity_type: node
 bundle: news_item
 label: 'Lead paragraph'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: string_long

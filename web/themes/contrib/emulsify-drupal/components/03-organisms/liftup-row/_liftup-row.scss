@@ -1,0 +1,5 @@
+.liftup-row {
+  @include large {
+    display: flex;
+  }
+}

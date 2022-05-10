@@ -1,6 +1,11 @@
 .layout-container {
-  max-width: $max-width;
-  padding-left: calc(-50vw + calc(#{$max-width} / 2));
-  padding-right: calc(-50vw + calc(#{$max-width} / 2));
+  font-family: $ids-font-family;
+  padding: 0 $space-s;
   margin: 0 auto;
+  max-width: $max-width;
+
+  @include max-width {
+    padding-left: calc(-50vw + calc(#{$max-width} / 2));
+    padding-right: calc(-50vw + calc(#{$max-width} / 2));
+  }
 }

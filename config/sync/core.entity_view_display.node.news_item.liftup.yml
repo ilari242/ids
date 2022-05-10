@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.news_item.field_main_image
     - node.type.news_item
   module:
-    - text
     - user
 id: node.news_item.liftup
 targetEntityType: node
@@ -17,7 +16,7 @@ bundle: news_item
 mode: liftup
 content:
   field_lead_paragraph:
-    type: text_default
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }

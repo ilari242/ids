@@ -23,7 +23,7 @@ content:
     weight: 2
     region: content
   field_lead_paragraph:
-    type: text_default
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }

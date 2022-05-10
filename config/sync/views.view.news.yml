@@ -181,8 +181,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
-    id: block_1
+  latest_news_block:
+    id: latest_news_block
     display_title: 'Latest news block'
     display_plugin: block
     position: 1

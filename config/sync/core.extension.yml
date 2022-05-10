@@ -27,6 +27,7 @@ module:
   filter: 0
   help: 0
   history: 0
+  ids_preprocess: 0
   image: 0
   link: 0
   media: 0
@@ -38,7 +39,9 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  preprocess: 0
   rdf: 0
+  responsive_image: 0
   search: 0
   shortcut: 0
   system: 0
