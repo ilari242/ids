@@ -1,0 +1,23 @@
+uuid: 53985894-1b50-4a1e-98ec-b6072b63fc69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.current_content_listing.field_latest_news
+    - paragraphs.paragraphs_type.current_content_listing
+  module:
+    - viewsreference
+id: paragraph.current_content_listing.default
+targetEntityType: paragraph
+bundle: current_content_listing
+mode: default
+content:
+  field_latest_news:
+    type: viewsreference_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
