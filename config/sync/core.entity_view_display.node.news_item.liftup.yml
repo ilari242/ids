@@ -16,13 +16,6 @@ targetEntityType: node
 bundle: news_item
 mode: liftup
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_lead_paragraph:
     type: text_default
     label: hidden
@@ -40,4 +33,5 @@ content:
     weight: 0
     region: content
 hidden:
+  body: true
   links: true
