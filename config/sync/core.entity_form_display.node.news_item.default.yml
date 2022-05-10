@@ -33,7 +33,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_lead_paragraph:
-    type: text_textarea
+    type: string_textarea
     weight: 2
     region: content
     settings:
