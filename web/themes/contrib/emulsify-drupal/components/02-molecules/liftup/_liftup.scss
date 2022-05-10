@@ -1,0 +1,39 @@
+.liftup {
+  &:not(:first-of-type) {
+    @include large {
+      margin-left: $space-s;
+    }
+  }
+
+  &:not(:last-of-type) {
+    @include large {
+      margin-right: $space-s;
+    }
+  }
+
+  &__container-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__content {
+    padding: $space-s 0;
+
+    @include large {
+      padding: $space-s;
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__body {
+    margin-bottom: 0;
+  }
+
+  &__image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
