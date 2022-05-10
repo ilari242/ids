@@ -1,0 +1,24 @@
+uuid: 404e39a5-1a9d-42e8-92f5-4ed2c70a9030
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.current_content_listing.field_latest_news
+    - paragraphs.paragraphs_type.current_content_listing
+  module:
+    - viewsreference
+id: paragraph.current_content_listing.default
+targetEntityType: paragraph
+bundle: current_content_listing
+mode: default
+content:
+  field_latest_news:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

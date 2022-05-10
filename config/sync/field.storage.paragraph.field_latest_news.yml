@@ -1,0 +1,21 @@
+uuid: 66e6a1bc-aff6-4686-b6ff-55ba6c33f9c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - views
+    - viewsreference
+id: paragraph.field_latest_news
+field_name: field_latest_news
+entity_type: paragraph
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: 5867ca35-6c80-4034-80cd-9e549f04921c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.liftup
+label: Liftup
+targetEntityType: node
+cache: true
