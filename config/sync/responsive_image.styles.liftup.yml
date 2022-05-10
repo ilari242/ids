@@ -1,0 +1,30 @@
+uuid: bcf5d02e-250c-4659-95dd-42f45abafa92
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_325x325
+    - image.style.max_650x650
+    - image.style.medium
+  theme:
+    - emulsify
+id: liftup
+label: Liftup
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+    breakpoint_id: emulsify.small-large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: max_325x325
+    breakpoint_id: emulsify.small-med
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: emulsify.small
+    multiplier: 1x
+breakpoint_group: emulsify
+fallback_image_style: medium
