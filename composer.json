@@ -22,6 +22,7 @@
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/paragraphs": "^1.14",
+        "drupal/preprocess": "^2.0",
         "drupal/twig_field_value": "^2.0",
         "drupal/viewsreference": "^2.0@beta",
         "drush/drush": "^11.0",

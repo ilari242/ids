@@ -1,0 +1,10 @@
+name: Test preprocess theme
+type: theme
+description: Theme for testing theme-provided preprocessors
+base theme: classy
+core: 8.x
+core_version_requirement: ^8 || ^9
+# Information added by Drupal.org packaging script on 2021-11-11
+version: '2.0.1'
+project: 'preprocess'
+datestamp: 1636632719
